@@ -1,4 +1,5 @@
 # byui-cse
-Computer Science and Engineering Department
+Department of Computer Science and Engineering
+Brigham Young University - Idaho
 
-Simple splash screen lives in `index.html`.
+https://www.byui.edu/computer-science-engineering/
