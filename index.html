@@ -1,95 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BYU-Idaho CSE</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --bg: #f6f8fb;
-        --card: #ffffff;
-        --text: #1a2233;
-        --muted: #4a5568;
-        --primary: #0057b8;
-        --primary-hover: #00479a;
-        --ring: rgba(0, 87, 184, 0.2);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background: radial-gradient(circle at top, #ffffff, var(--bg));
-        color: var(--text);
-        padding: 1.5rem;
-      }
-
-      main {
-        width: min(560px, 100%);
-        background: var(--card);
-        border: 1px solid #e8edf5;
-        border-radius: 16px;
-        box-shadow: 0 12px 30px rgba(12, 38, 76, 0.08);
-        padding: 2.5rem 2rem;
-        text-align: center;
-      }
-
-      .label {
-        margin: 0;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        font-size: 0.75rem;
-        color: var(--muted);
-      }
-
-      h1 {
-        margin: 0.75rem 0 1rem;
-        font-size: clamp(1.6rem, 4vw, 2.2rem);
-      }
-
-      p {
-        margin: 0;
-        color: var(--muted);
-        line-height: 1.6;
-      }
-
-      .link {
-        display: inline-block;
-        margin-top: 1.5rem;
-        padding: 0.75rem 1.2rem;
-        border-radius: 10px;
-        text-decoration: none;
-        color: #ffffff;
-        background: var(--primary);
-        font-weight: 600;
-        transition: background-color 0.2s ease, transform 0.2s ease;
-      }
-
-      .link:hover,
-      .link:focus-visible {
-        background: var(--primary-hover);
-        transform: translateY(-1px);
-      }
-
-      .link:focus-visible {
-        outline: 3px solid var(--ring);
-        outline-offset: 2px;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYU-Idaho Department of Computer Science &amp; Engineering</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <main>
-      <p class="label">BYU-Idaho</p>
-      <h1>Computer Science &amp; Engineering Department</h1>
-      <p>Explore programs, resources, and opportunities in computing and engineering.</p>
-      <a class="link" href="https://www.byui.edu/computer-science-engineering/">Visit Department Page</a>
+    <main class="page-shell">
+      <header class="masthead">
+        <a class="brand" href="https://www.byui.edu/" aria-label="BYU-Idaho home">
+  
+          <span class="brand__name">BYU-Idaho</span>
+        </a>
+        <span class="masthead__rule" aria-hidden="true"></span>
+        <p class="masthead__label">Computer Science &amp; Engineering</p>
+      </header>
+
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Build what matters</p>
+        <h1 id="page-title">Where ideas become <em>useful</em> technology.</h1>
+        <p class="hero__intro">Explore the people, programs, and projects shaping the future of computing and engineering at BYU-Idaho.</p>
+        <a class="button" href="https://www.byui.edu/computer-science-engineering/">
+          Visit the department
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </section>
+
+      <section class="highlights" aria-label="Department highlights">
+        <article class="highlight">
+          <span class="highlight__number">01</span>
+          <h2>Learn deeply</h2>
+          <p>Turn strong fundamentals into practical skills through focused programs and hands-on work.</p>
+        </article>
+        <article class="highlight">
+          <span class="highlight__number">02</span>
+          <h2>Create boldly</h2>
+          <p>Collaborate on software, systems, and ideas that serve real people and real communities.</p>
+        </article>
+        <article class="highlight">
+          <span class="highlight__number">03</span>
+          <h2>Lead kindly</h2>
+          <p>Grow as a technical professional who brings clarity, integrity, and purpose to the work.</p>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <span>Brigham Young University - Idaho</span>
+        <a href="https://github.com/byui-cse">Explore our GitHub organization</a>
+      </footer>
     </main>
   </body>
 </html>
